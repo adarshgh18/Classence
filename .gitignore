@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing & Coverage
+/coverage
+
+# Production Builds & Output
+build/
+dist/
+out/
+
+# Environment Variables (Secrets)
+.env
+.env*.local
+.env.development
+.env.test
+.env.production
+!.env.example
+!**/.env.example
+
+# Backend Runtime Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+.gemini/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+

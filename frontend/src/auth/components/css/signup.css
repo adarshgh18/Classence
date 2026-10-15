@@ -1,0 +1,402 @@
+:root {
+  --primary-color: #066769;
+  --primary-color-light: #008080;
+  --neutral-1000: #121212;
+  --neutral-700: #4C5858;
+  --neutral-00: #FAFAFA;
+  --neutral-500: #555;
+  --background-light: #F7F8F8;
+  --weak-color: #C63C3C;
+  --medium-color: #FFB74D;
+  --strong-color: green;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+#signmobscreenlogo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 55;
+}
+
+.signUpPage {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.signupleft {
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+
+.signupleftSub {
+    margin-left: 20%;
+    width: 347px;
+}
+
+#signuph2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: var(--neutral-1000);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 31.2px;
+}
+
+.signupleftSub p {
+    font-size: 14px;
+    margin-bottom: 39px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 20px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    border: 1px solid var(--neutral-700);
+}
+
+.textinput::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Poppins;
+    color: var(--neutral-1000);
+}
+
+#terms {
+    top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    justify-self: flex-end;
+    margin-right: 12px;
+    margin-left: 10px;
+}
+
+#terms a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--primary-color-light);
+    font-weight: 600;
+}
+
+#sub {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: none;
+    color: var(--neutral-00);
+    margin-top: 24px;
+    background: var(--primary-color);
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.asklogin {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.asklogin a {
+    padding: 8px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.signupright {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--background-light);
+}
+
+.scroller {
+    display: flex;
+    gap: 8px;
+    margin-top: 142.98px;
+    justify-self: center;
+}
+
+#sub {
+    color: var(--neutral-00);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.slider2 {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.disabled-button {
+    cursor: default;
+    pointer-events: none;
+}
+
+.password-popup {
+    z-index: 5;
+    opacity: 0;
+    position: fixed;
+    width: 348px;
+    background: rgb(254, 250, 238);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-top: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.password-popup p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--neutral-500);
+}
+
+.password-popup p.met {
+    color: var(--strong-color);
+}
+
+.progress-bar-container {
+    height: 5px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.progress-bar.weak {
+    background-color: var(--weak-color);
+}
+
+.progress-bar.medium {
+    background-color: var(--medium-color);
+}
+
+
+.progress-bar.strong {
+    background-color: var(--strong-color);
+}
+
+.password-strength.weak {
+    color: var(--weak-color);
+}
+
+.password-strength.medium {
+    color: var(--medium-color);
+}
+
+.password-strength.strong {
+    color: var(--strong-color);
+}
+
+#priP {
+    margin-left: 45px !important;
+}
+.signupleftSub .error-message {
+  color: var(--color-error);
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-left: 16px;
+  margin-bottom: 8px !important;
+  
+}
+.met,
+.not-met {
+    gap: 10px;
+    display: flex;
+}
+
+#pp {
+    margin-left: 37px;
+}
+
+label {
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .password-popup {
+        width: 90vw;
+    }
+    .signupright {
+        display: none;
+    }
+    .signupleft {
+        width: 100%;
+    }
+    .signupleftSub {
+        margin-left: 5%;
+        width: 90%;
+        margin-right: 5%;
+        margin-top: 5vh;
+    }
+    #leftSubh2 {
+        font-size: 30px;
+    }
+    .asklogin p {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+    .asklogin a {
+        font-size: 14px;
+        padding: 0;
+        padding-left: 8px;
+    }
+    #signmobscreenlogo {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin-top: 2vh;
+        height: 100px;
+    }
+    #signmobscreenlogo img {
+        display: block;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 600px) {
+    .password-popup {
+        width: 60%;
+    }
+    #pp {
+        margin-left: 0;
+    }
+    .signupright {
+        display: none;
+    }
+    .signupleft {
+        width: 100%;
+    }
+    .signupleftSub {
+        margin-left: 20%;
+        width: 60%;
+        margin-right: 20%;
+        margin-top: 5vh;
+    }
+    #leftSubh2 {
+        font-size: 30px;
+    }
+    .signupleftSub p {
+        font-size: 14px;
+        margin-right: 5%;
+    }
+    .input-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .checkbox-container {
+        margin-bottom: 50px;
+    }
+    .checkbox-container a {
+        font-size: 14px;
+        justify-self: left;
+    }
+    input[type="checkbox"] {
+        margin-left: auto;
+    }
+    #signmobscreenlogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        height: 100px;
+    }
+
+    #signmobscreenlogo img {
+        display: block;
+    }
+    .asklogin {
+        display: flex;
+        justify-content: center;
+    }
+    .asklogin > p {
+        display: flex;
+        align-self: center;
+    }
+    .asklogin a {
+        font-size: 14px;
+        padding: 0;
+        padding-left: 8px;
+    }
+}
+
+.tc {
+    color: var(--primary-color) !important;
+    font-weight: 600;
+}
+
+label[for="terms"] {
+    font-size: 14px;
+}
+
+@media (max-width: 702px) {
+    #pp {
+        white-space: nowrap;
+        margin-left: 37px;
+    }
+}
+
+@media (max-width: 600px) {
+    #pp {
+        white-space: nowrap;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 468px) {
+    #pp {
+        margin-left: 37px;
+    }
+}
+
+@media (max-height: 750px) {
+    #signupmobscreenlogo {
+        margin-top: 0;
+    }
+    .signupleftSub p {
+        margin-bottom: 10px;
+    }
+    #sub {
+        margin-top: 10px;
+    }
+}

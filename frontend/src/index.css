@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-toast-success-bg: #E3F5E3;
+  --color-toast-success-border: #55b938;
+  --color-toast-error-bg: #FBE5E5;
+  --color-error: #A62F2F;
+}
+
+.custom-toastS {
+  background-color: var(--color-toast-success-bg, #E3F5E3) !important;
+  color: black !important;
+  border-radius: 4px;
+  padding: 10px;
+  border-left: 5px solid var(--color-toast-success-border, #55b938) !important;
+}
+
+.custom-toast {
+  background-color: var(--color-toast-error-bg, #FBE5E5) !important;
+  color: black !important;
+  border-radius: 4px;
+  padding: 10px;
+  border-left: 5px solid var(--color-error, #A62F2F) !important;
+}
+
